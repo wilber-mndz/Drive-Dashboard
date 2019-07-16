@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Importamos fuente Roboto desde Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="fa/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <title>Drive - CSS Grid</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="menu-header">
+                Drive
+            </div>
+            <ul>
+                <li class="active"><a href="#"><i class="far fa-compass"></i> Almacenamiento</a></li>
+            </ul>
+            <span>Archivos</span>
+            <ul>
+                <li><a href="#"><i class="far fa-folder-open"></i> Mis archivos</a></li>
+                <li><a href="#"><i class="far fa-share-square"></i> Compartiendo</a></li>
+                <li><a href="#"><i class="far fa-folder"></i> Solicitudes</a></li>
+                <li><a href="#"><i class="far fa-trash-alt"></i> Papelera</a></li>
+            </ul>
+            <span>Mis carpetas</span>
+            <ul>
+                <li><a href="#"><i class="far fa-folder"></i> Diseño</a></li>
+                <li><a href="#"><i class="far fa-folder"></i> Música</a></li>
+                <li><a href="#"><i class="far fa-folder"></i> Trabajos</a></li>
+
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="arrows">
+                <a href="#"><i class="fas fa-arrow-left"></i></a><a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="upload-file">
+                <label for="upload">SUBIR NUEVO ARCHIVO</label>
+                <input type="file" name="" id="upload">
+            </div>
+
+            <h5 class="folders-tittle">Usados recientemente</h5>
+
+            <div class="folders">
+
+                <div class="folder active">
+                    <div class="header"></div>
+                    <div class="body">
+                        <p class="shared">Compartido con</p>
+                        <div class="people">
+                            <img src="img/01.png" alt="">
+                            <img src="img/02.png" alt="">
+                            <img src="img/03.png" alt="">
+                        </div>
+                        <p class="folder-name"> <a href="#">Diseño</a> </p>
+                    </div>
+                </div>
+
+                <div class="folder">
+                    <div class="header"></div>
+                    <div class="body">
+                        <p class="shared">Compartido con</p>
+                        <div class="people">
+                            <img src="img/01.png" alt="">
+                            <img src="img/02.png" alt="">
+                            <img src="img/03.png" alt="">
+                        </div>
+                        <p class="folder-name"> <a href="#">Música</a> </p>
+                    </div>
+                </div>
+
+                <div class="folder">
+                    <div class="header"></div>
+                    <div class="body">
+                        <p class="shared">Compartido con</p>
+                        <div class="people">
+                            <img src="img/01.png" alt="">
+                            <img src="img/02.png" alt="">
+                            <img src="img/03.png" alt="">
+                        </div>
+                        <p class="folder-name"> <a href="#">Trabajos</a> </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h5 class="new-files-tittle">Nuevos archivos</h5>
+            <div class="new-files">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Nombre</th>
+                            <th>Extension</th>
+                            <th>Fecha</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="start"><i class="fas fa-file-archive"></i></td>
+                            <td>Plantilla css grid</td>
+                            <td>.zip</td>
+                            <td>25.07.2019</td>
+                            <td class="end">
+                                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                <a href="#"><i class="fas fa-plus"></i></a>
+                                <a href="#"><i class="far fa-share-square"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="start"><i class="fas fa-file-powerpoint"></i></td>
+                            <td>Presentacion del taller</td>
+                            <td>.pptx</td>
+                            <td>25.07.2019</td>
+                            <td class="end">
+                                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                <a href="#"><i class="fas fa-plus"></i></a>
+                                <a href="#"><i class="far fa-share-square"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="start"><i class="fas fa-file-code"></i></td>
+                            <td>index</td>
+                            <td>.html</td>
+                            <td>25.07.2019</td>
+                            <td class="end">
+                                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                <a href="#"><i class="fas fa-plus"></i></a>
+                                <a href="#"><i class="far fa-share-square"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <aside>
+            <div class="info">
+                <h4>Estadisticas</h4>
+            </div>
+
+            <div class="widgets">
+
+                <div class="widget downloads">
+                    <p class="header-widget">Descargas</p>
+                    <div class="circle">
+                        65
+                    </div>
+                    <p class="footer-widget">Por dia</p>
+                </div>
+
+                <div class="widget shared">
+                    <p class="header-widget">Compartiendo</p>
+                    <div class="circle">
+                        57
+                    </div>
+                    <p class="footer-widget">Archivos</p>
+                </div>
+
+                <div class="widget avilable-space">
+                    <p class="header-widget">Espacio disponible</p>
+                    <div class="circle">
+                        12
+                    </div>
+                    <p class="footer-widget">GB</p>
+                </div>
+            </div>
+
+            <button class="more-space">Solicitar mas espacio</button>
+
+        </aside>
+    </div>
+
+</body>
+
+</html>
