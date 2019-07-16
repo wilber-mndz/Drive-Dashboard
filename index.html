@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Importamos fuente Roboto desde Google Font -->
+    <!-- Fuentes de Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="fa/css/all.css"> -->
+    <!-- Iconos Fontawesomw -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <title>Drive - CSS Grid</title>
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Drive Dashboard</title>
 </head>
 
 <body>
@@ -34,16 +37,17 @@
                 <li><a href="#"><i class="far fa-folder"></i> Diseño</a></li>
                 <li><a href="#"><i class="far fa-folder"></i> Música</a></li>
                 <li><a href="#"><i class="far fa-folder"></i> Trabajos</a></li>
-
             </ul>
         </nav>
         <div class="main">
+
             <div class="arrows">
                 <a href="#"><i class="fas fa-arrow-left"></i></a><a href="#"><i class="fas fa-arrow-right"></i></a>
             </div>
+
             <div class="upload-file">
-                <label for="upload">SUBIR NUEVO ARCHIVO</label>
-                <input type="file" name="" id="upload">
+                <label for="upload">SUBIR NUEVHO ARCHIVO</label>
+                <input type="file" id="upload">
             </div>
 
             <h5 class="folders-tittle">Usados recientemente</h5>
@@ -51,41 +55,41 @@
             <div class="folders">
 
                 <div class="folder active">
-                    <div class="header"></div>
-                    <div class="body">
-                        <p class="shared">Compartido con</p>
+                    <div class="folder-header"></div>
+                    <div class="folder-body">
+                        <p class="shared">Compartiendo con</p>
                         <div class="people">
                             <img src="img/01.png" alt="">
                             <img src="img/02.png" alt="">
                             <img src="img/03.png" alt="">
                         </div>
-                        <p class="folder-name"> <a href="#">Diseño</a> </p>
+                        <a href="#" class="folder-name">Diseño</a>
                     </div>
                 </div>
 
                 <div class="folder">
-                    <div class="header"></div>
-                    <div class="body">
-                        <p class="shared">Compartido con</p>
+                    <div class="folder-header"></div>
+                    <div class="folder-body">
+                        <p class="shared">Compartiendo con</p>
                         <div class="people">
                             <img src="img/01.png" alt="">
                             <img src="img/02.png" alt="">
                             <img src="img/03.png" alt="">
                         </div>
-                        <p class="folder-name"> <a href="#">Música</a> </p>
+                        <a href="#" class="folder-name">Música</a>
                     </div>
                 </div>
 
                 <div class="folder">
-                    <div class="header"></div>
-                    <div class="body">
-                        <p class="shared">Compartido con</p>
+                    <div class="folder-header"></div>
+                    <div class="folder-body">
+                        <p class="shared">Compartiendo con</p>
                         <div class="people">
                             <img src="img/01.png" alt="">
                             <img src="img/02.png" alt="">
                             <img src="img/03.png" alt="">
                         </div>
-                        <p class="folder-name"> <a href="#">Trabajos</a> </p>
+                        <a href="#" class="folder-name">Trabajos</a>
                     </div>
                 </div>
 
@@ -140,44 +144,42 @@
                     </tbody>
                 </table>
             </div>
+
         </div>
-        <aside>
+        <aside> 
             <div class="info">
                 <h4>Estadisticas</h4>
             </div>
 
             <div class="widgets">
 
-                <div class="widget downloads">
+                <div class="widget">
                     <p class="header-widget">Descargas</p>
                     <div class="circle">
                         65
                     </div>
-                    <p class="footer-widget">Por dia</p>
+                    <p class="footer-widget">por dia</p>
                 </div>
-
-                <div class="widget shared">
+                <div class="widget">
                     <p class="header-widget">Compartiendo</p>
                     <div class="circle">
-                        57
+                        65
                     </div>
-                    <p class="footer-widget">Archivos</p>
+                    <p class="footer-widget">archivos</p>
                 </div>
-
                 <div class="widget avilable-space">
                     <p class="header-widget">Espacio disponible</p>
                     <div class="circle">
-                        12
+                        10
                     </div>
                     <p class="footer-widget">GB</p>
                 </div>
+
             </div>
 
             <button class="more-space">Solicitar mas espacio</button>
-
         </aside>
     </div>
-
 </body>
 
 </html>
